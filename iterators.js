@@ -64,7 +64,7 @@ const gradesLetter = (grade) => {
   else if (grade >= 60) return "D";
   else return "F";
 };
-const makeLiteralGrade = (grades) => grades.map((grade) => gradesLetter(grade));
+const makeLiteralGrade = (grades) => grades.map(gradesLetter);
 console.log(makeLiteralGrade([90, 70, 40]));
 
 // if (grade < 60) return "F";
